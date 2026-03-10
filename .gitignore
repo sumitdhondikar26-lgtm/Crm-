@@ -1,0 +1,20 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Dependencies
+node_modules/
+
+# Build outputs
+crm-backend/target/
+crm-frontend/dist/
+
+# Logs
+*.log
+
+# Temp
+crm-output.txt
