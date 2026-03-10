@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: crm-backend
+    runtime: java
+    plan: free
+    branch: main
+    rootDir: crm-backend
+    buildCommand: mvn clean package -DskipTests
+    startCommand: java -jar target/*.jar
+    envVars:
+      - key: SPRING_PROFILES_ACTIVE
+        value: prod
